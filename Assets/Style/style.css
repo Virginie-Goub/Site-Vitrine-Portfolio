@@ -1,0 +1,301 @@
+/*Style Général*/
+
+body {
+  background-color: rgb(red, green, blue);
+  font-family: fantasy;
+  margin: 0px;
+}
+
+body .section-title {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+body .section-content {
+  text-align: justify;
+}
+
+/*Barre de navigation*/
+
+.main-navbar .logo {
+  height: 60px;
+  width: 60px;
+}
+
+.main-navbar {
+  height: 64px;
+  background-color: white;
+  box-shadow: 0px 3px 10px rgb(110, 192, 212);
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.main-navbar .link-container {
+  float: right;
+  height: 64px;
+  margin: 0px 20px;
+  padding-left: 50px;
+}
+
+.main-navbar .link-container li {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 7px 10px;
+}
+
+.main-navbar .link-container li:hover {
+  background-color: rgb(56, 58, 58);
+  cursor: pointer;
+}
+
+.main-navbar .link-container li a {
+  columns: #151515;
+  text-decoration: none;
+}
+
+.main-navbar .link-container li:hover a {
+  color: rgb(103, 198, 221);
+}
+
+/*En tête*/
+header {
+  min-height: 100vh;
+  background-image: url("file:///Users/virginiegoubault/Desktop/Projet%20perso/water.jpeg");
+  background-size: cover;
+  position: relative;
+}
+
+header .header-content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 20vh;
+}
+
+header .header-content h1 {
+  font-size: 100px;
+  color: rgb(4, 4, 53);
+}
+
+header .header-content p {
+  font-size: 50px;
+  color: rgb(4, 4, 53);
+  font-style: italic;
+}
+
+header .header-content h1,
+header .header-content p {
+  text-align: center;
+}
+
+/*Le bateau*/
+
+#boat {
+  display: flex;
+  min-height: 70vh;
+  background-color: white;
+}
+
+#boat .left-content {
+  flex: 1;
+  padding: 20px 30px;
+}
+
+#boat .right-content {
+  background-image: url("https://pbs.twimg.com/media/CuvcdC0W8AEn_Hj.jpg");
+  background-size: cover;
+  flex: 1;
+}
+
+#boat h2 {
+  text-align: center;
+  color: rgb(110, 192, 212);
+  font-size: 70px;
+}
+
+/*Itinéraire*/
+
+#itinéraires {
+  background-color: black;
+  padding: 20px 30px;
+}
+
+#itinéraires .section-title {
+  font-size: 70px;
+  color: rgb(110, 192, 212);
+  text-align: center;
+  box-shadow: 0px 3px 10px rgb(110, 192, 212);
+}
+
+#itinéraires .proposed-itinerary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#itinéraires .proposed-itinerary .picture-itinerary {
+  flex: 1;
+  list-style: none;
+  margin: 20px;
+  flex-basis: 200px;
+}
+
+#itinéraires .proposed-itinerary .picture-itinerary img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+#itinéraires .proposed-itinerary p {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#prestations {
+  background-color: black;
+  padding: 20px 30px;
+}
+
+#prestations .section-title {
+  font-size: 70px;
+  color: rgb(110, 192, 212);
+  text-align: center;
+  box-shadow: 0px 3px 10px rgb(110, 192, 212);
+}
+#prestations .proposed-prestations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#prestations .proposed-prestations .picture-prestations {
+  flex: 1;
+  list-style: none;
+  margin: 20px;
+  flex-basis: 200px;
+}
+
+#prestations .proposed-prestations .picture-prestations img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+#prestations .picture-prestations p {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Tarif*/
+
+#pricing {
+  background-color: white;
+  padding: 20px 30px 50px 20px;
+}
+
+#pricing .section-title {
+  color: rgb(110, 192, 212);
+  text-align: center;
+  box-shadow: 0px 3px 10px rgb(110, 192, 212);
+  font-size: 70px;
+}
+
+#pricing .table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#pricing .table th,
+#pricing .table td {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+#pricing .table th {
+  background-color: black;
+  font-size: 30px;
+  color: rgb(110, 192, 212);
+  text-align: center;
+}
+
+#pricing .table td {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Contact*/
+
+#contact {
+  background-color: white;
+  padding: 20px 30px;
+}
+
+#contact .section-title {
+  color: rgb(110, 192, 212);
+  text-align: center;
+  box-shadow: 0px 3px 10px rgb(110, 192, 212);
+  font-size: 70px;
+}
+
+#contact .contact-form {
+  margin: auto;
+  width: 50vw;
+}
+
+#contact .contact-form label {
+  color: black;
+}
+
+#contact .contact-form .text-input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact .contact-form input [type="text"],
+#contact .contact-form input [type="email"],
+#contact .contact-form input [type="number"] {
+  border: 0px;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#contact .contact-form .submit-button {
+  width: 100px;
+  display: block;
+  margin: 50px auto;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: transparent;
+  color: black;
+}
+
+#contact .contact-form .submit-button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+/*Pied de page*/
+
+footer {
+  background-color: grey;
+  padding: 3px;
+  margin: 0px;
+}
+
+footer p {
+  text-align: center;
+  color: ivory;
+}

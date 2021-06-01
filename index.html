@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>What if'</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="assets/Style/style.css"/>
+    </head>
+
+    <body>
+        <!--Barre de navigation-->
+        <nav class="main-navbar">
+            <img
+            class="logo"
+            src="encre-logo.jpeg"
+            alt="logo3"/>
+            <ul class="link-container">
+                <li><a href="#boat">Le bateau</a/li>
+                <li><a href="#itinéraires">Itinéraires</a></li>
+                <li><a href="#prestations">Prestations</a></li>
+                <li><a href="#pricing">Tarifs</a></li>
+                <li><a href="#contact">Contactez-moi</a></li>
+            </ul>
+        </nav>
+
+        <!--En tête-->
+        <header>
+            <div class="header-content">
+                <h1>What if'</h1>
+                <p>Vivez une expérience inoubliable!</p>
+            </div>
+        </header>
+        
+        <!--Section Le bateau-->
+        <section id="boat">
+            <div class="left-content">
+                <h2 class="section-title">Le bateau</h2>
+                <p class="section-content">Il s'agit d'un bateau datant de 1962, classé au patrimoine.
+                    <br/>
+                    <br/>
+                    Somptueux et majestueux il a également fait parler de lui en 1995 en raliant Brest à Fort de France.
+                    <br/>
+                    <br/>
+                    Une traversée de 32 jours qui lui a donné son surnom depuis son périple dans les Caraîbes : Le Brave!
+                    <br>
+                    <br/>
+                    Il peut accueillir 10 personnes au maximum. Il est spacieux, bien agencé et est doté d'un plongeoir pour les plus téméraires !
+                </p>
+            </div>
+            <div class="right-content"></div>
+
+        </section>
+
+        <!--Section Itinéraires-->
+        <section id="itinéraires">
+            <div>
+                <h2 class="section-title">Itinéraires</h2>
+                <ul class="proposed-itinerary">
+                    <li class="picture-itinerary">
+                        <img src="porquerolles.jpg">
+                    <p>Porquerolles</p></li>
+                    <li class="picture-itinerary">
+                        <img src="ile d'or.jpg">
+                    <p>Ile d'or</p></li>
+                    <li class="picture-itinerary">
+                        <img src="ile du levant.jpg">
+                    <p>Ile du levant</p></li>
+                    <li class="picture-itinerary">
+                        <img src="presqu'ile de gien.jpg">
+                    <p>Presqu'ile de Gien</p></li>
+                </ul>
+
+            </div>
+        </section>
+        <!--Prestations-->
+        <section id="prestations">
+            <div>
+                <h1 class="section-title">Prestations</h1>
+                <ul class="proposed-prestations">
+                    <li class="picture-prestations">
+                        <img src="repas.jpeg">
+                    <p>Un repas sur mesure avec boissons comprises</p></li>
+                    <li class="picture-prestations">
+                        <img src="snorkling.jpg">
+                    <p>Du snorkling à volonté</p></li>
+                    <li class="picture-prestations">
+                        <img src="cs.jpg">
+                    <p>Un coucher de soleil splendide</p></li>
+                    
+                </ul>
+            </div>
+            
+
+        </section>
+        <!--Tarifs-->
+        <section id="pricing">
+            <h2 class="section-title">Tarifs</h2>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Itinéraire</th>
+                        <th>Prix/pers</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Porquerolles</td>
+                        <td>100 €</td>
+                    </tr>
+                    <tr>
+                        <td>Ile d'or</td>
+                        <td>125 €</td>
+                    </tr>
+                    <tr>
+                        <td>Ile du Levant</td>
+                        <td>150 €</td>
+                    </tr>
+                    <tr>
+                        <td>Presqu'ile de Gien</td>
+                        <td>175 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!--Contactez-moi-->
+        <section id="contact">
+            <h2 class="section-title">Contactez-moi</h2>
+
+        <!--Formulaire de contact-->
+        <form class="contact-form">
+            <label class="text-input-label" for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="prénom" required/>
+
+            <label class="text-input-label" for="lastname">NOM</label>
+            <input type="text" id="lastname" name="NOM" required/>
+
+            <label class="text-input-label" for="email">Email</label>
+            <input type="email" id="email" name="email" required/>
+
+            <label class="text-input-label" for="number">Nombre de passager</label>
+            <input type="number" id="number" name="Nombre de passager" required/>
+
+            <label class="text-input-label" for="message">Message :</label>
+            <textarea name="message" id="message>"></textarea>
+
+           <!--Conditions d'utilisation-->
+           <div>
+            <label for="consent">J'accepte les conditions générales</label>
+            <input type="checkbox" name="consent" id="consent"/>
+           </div>
+
+           <div>
+               <button class="submit-button">Envoyer</button>
+           </div>
+        </form>  
+
+        </section>
+
+        <!--Pied de page-->
+        <section>
+            <footer>
+                <p>&copy;What'if 2021</p>
+            </footer>
+        </section>
+
+    </body>
+</html>
